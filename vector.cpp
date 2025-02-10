@@ -34,8 +34,8 @@ void part2()
         charVec.push_back(i);
     }
 
-    size_t byteSizeBool = boolVec.size()/8;
-    size_t byteSizeChar = charVec.size() * sizeof(char);
+    int byteSizeBool = boolVec.size()/8;
+    int byteSizeChar = charVec.size();
 
     cout << "Memory usage of std::vector<bool>: " << byteSizeBool << " bytes" << endl;
 
