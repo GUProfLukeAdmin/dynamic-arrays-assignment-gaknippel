@@ -28,13 +28,13 @@ void part2()
     vector <bool> boolVec;
     vector <char> charVec;
 
-    for(int i = 0; i < 50000; i++)
+    for(int i = 0; i < 10000; i++)
     {
         boolVec.push_back(i);
         charVec.push_back(i);
     }
 
-    int byteSizeBool = boolVec.size();
+    int byteSizeBool = boolVec.size()/8;
     int byteSizeChar = charVec.size();
 
     cout << "Memory usage of std::vector<bool>: " << byteSizeBool << " bytes" << endl;
