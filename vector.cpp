@@ -20,7 +20,7 @@ void part1()
 
     vec1.shrink_to_fit();
 
-    cout << "After shirnk_to_fit(): Size = " << vec1.size() << ", Capacity = " << vec1.capacity() << endl;
+    cout << "After shrink_to_fit(): Size = " << vec1.size() << ", Capacity = " << vec1.capacity() << endl;
 }
 
 void part2() 
@@ -32,7 +32,7 @@ void part2()
 
     cout << "Memory usage of std::vector<bool>: " << boolVec.capacity()/8 << " bytes" << endl;
 
-    cout << "Memory usage of std::vector<bool>: " << charVec.capacity() << " bytes" << endl;
+    cout << "Memory usage of std::vector<char>: " << charVec.capacity() << " bytes" << endl;
 
     
 }
