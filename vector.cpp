@@ -25,21 +25,14 @@ void part1()
 
 void part2() 
 {
-    vector <bool> boolVec;
-    vector <char> charVec;
+    vector <bool> boolVec(10000);
+    vector <char> charVec(10000);
 
-    for(int i = 0; i < 10000; i++)
-    {
-        boolVec.push_back(i);
-        charVec.push_back(i);
-    }
 
-    int byteSizeBool = boolVec.size()/8;
-    int byteSizeChar = charVec.size();
 
-    cout << "Memory usage of std::vector<bool>: " << byteSizeBool << " bytes" << endl;
+    cout << "Memory usage of std::vector<bool>: " << boolVec.capacity()/8 << " bytes" << endl;
 
-    cout << "Memory usage of std::vector<bool>: " << byteSizeChar << " bytes" << endl;
+    cout << "Memory usage of std::vector<bool>: " << charVec.capacity() << " bytes" << endl;
 
     
 }
